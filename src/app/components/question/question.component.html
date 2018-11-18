@@ -1,0 +1,20 @@
+<div *ngIf="question | async; let q">
+  <div class="question text-center" *ngIf="counter | async as c">
+    <span class="blue-bold"> Q:{{c}}</span><span class="question-body">{{q.question | quote}}</span>
+
+    <div class="container answers-body">
+      <div class="answers-row row">
+        <div class="col-6" *ngFor="let answer of q.incorrect_answers">
+          <answer-box [text]="answer"></answer-box>
+        </div>
+      </div>
+      <div class="row button-row">
+
+        <div [ngClass]="buttonClass" (click)="checkAnswer(c)">
+          <div>{{buttonText}}</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

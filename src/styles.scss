@@ -1,1 +1,27 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/scss/bootstrap";
+html,
+body {
+  box-sizing: border-box;
+  font-family: "OpenSans", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+    sans-serif;
+  letter-spacing: 0;
+}
+
+.ok-button {
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 375px;
+  height: 69px;
+  background: #f0f0f0;
+  border-radius: 100px;
+  &.active {
+    background: #ff8f48;
+    &:hover {
+      background: #f68034;
+    }
+  }
+}

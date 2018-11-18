@@ -1,0 +1,15 @@
+.page-indicators {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+  .page {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    background: #c9cfd3;
+    &.full-page {
+      background: #0d7bab;
+    }
+  }
+}
