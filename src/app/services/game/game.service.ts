@@ -36,7 +36,6 @@ export class GameService {
 
   updateGameCounter() {
     let counter = this._counter.getValue();
-    console.log(counter);
     this._counter.next(counter + 1);
   }
 
